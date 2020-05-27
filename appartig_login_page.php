@@ -3,7 +3,8 @@
 	/*
 		Plugin Name: AppArtig Login Page
 		Description: Login Page Styling with AppArtig e.U. Logo
-		Version:     1.0.0
+					 and "done by AppArtig" HTML comment in <head>
+		Version:     1.1.0
 		Author:      AppArtig e.U.
 		Author URI:  https://www.appartig.at
 		License:     APPARTIG/AGB
