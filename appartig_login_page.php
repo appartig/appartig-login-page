@@ -3,7 +3,8 @@
 	/*
 		Plugin Name: AppArtig Login Page
 		Description: Login Page Styling with AppArtig e.U. Logo
-		Version:     1.0.0
+					 and "done by AppArtig" HTML comment in <head>
+		Version:     1.1.0
 		Author:      AppArtig e.U.
 		Author URI:  https://www.appartig.at
 		License:     APPARTIG/AGB
@@ -38,8 +39,44 @@
 		return home_url();
 	});
 
-	add_filter('login_headertitle', function () {
+	add_filter('login_headertext', function () {
 		return get_bloginfo() . ' by AppArtig e.U.';
 	});
+
+	add_action('wp_head', function () {
+?>	
+	<!--
+
+	- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+	- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+	- - -        __                __                         - - -
+	- - -    ___/ /__  ___  ___   / /  __ __                  - - -
+	- - -   / _  / _ \/ _ \/ -_) / _ \/ // /                  - - -
+	- - -   \_,_/\___/_//_/\__/ /_.__/\_, /                   - - -
+	- - -                            /___/                    - - -
+	- - -       ___                ___         __  _          - - -
+	- - -      /   |  ____  ____  /   |  _____/ /_(_)___ _    - - -
+	- - -     / /| | / __ \/ __ \/ /| | / ___/ __/ / __ `/    - - -
+	- - -    / ___ |/ /_/ / /_/ / ___ |/ /  / /_/ / /_/ /     - - -
+	- - -   /_/  |_/ .___/ .___/_/  |_/_/   \__/_/\__, /      - - -
+	- - -         /_/   /_/                      /____/       - - -
+	- - -                                                     - - -
+	- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+	- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+	- - -                                                     - - -
+	- - -   AppArtig e.U. ist ein Ein-Personen-Unternehmen    - - -
+	- - -   von Jakob Vesely und entwickelt Software 		  - - -
+	- - -   im Herzen von Niederösterreich.       			  - - -
+	- - -                                                     - - -
+	- - -   office@appartig.at                                - - -
+	- - -   www.appartig.at                                   - - -
+	- - -                                                     - - -
+	- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+	- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+	
+	-->
+
+<?php
+	}, 0);
 
 ?>
