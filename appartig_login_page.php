@@ -38,7 +38,7 @@
 		return home_url();
 	});
 
-	add_filter('login_headertitle', function () {
+	add_filter('login_headertext', function () {
 		return get_bloginfo() . ' by AppArtig e.U.';
 	});
 
